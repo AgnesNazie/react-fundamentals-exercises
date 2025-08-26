@@ -6,6 +6,7 @@ import PrimaryButton from "./Components/PrimaryButton";
 import QuantitySelector from "./Components/QuantitySelector";
 import PasswordField from "./Components/PasswordField"; 
 import LikeButton from "./Components/LikeButton";
+import ContactSearch from "./Components/ContactSearch";
  
 function App() {
   return (
@@ -43,6 +44,16 @@ function App() {
       <PasswordField />
       {/* Exercise 7 */}
       <LikeButton initialCount={10} />
+
+      {/* Exercise 8 */}
+      <ContactSearch
+        contacts={[
+          { id: 1, name: "Agnes Nazie" },
+          { id: 2, name: "Che Kenneth" },
+          { id: 3, name: "Fidelis Fuche" },
+          { id: 4, name: "Lizzy Neol" },
+        ]}
+      />
  
     </div>
   );
