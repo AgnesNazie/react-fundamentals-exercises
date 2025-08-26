@@ -9,6 +9,7 @@ import LikeButton from "./Components/LikeButton";
 import ContactSearch from "./Components/ContactSearch";
 import TodoList from "./Components/TodoList";
 import ProductDetails from "./Components/ProductDetails";
+import ExpenseTracker from "./Components/ExpenseTracker";
  
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
       
       {/* Exercise 10 */}
       <ProductDetails title="Wireless Headphones" price={99.99} />
+
+      {/* Exercise 11 */}
+      <ExpenseTracker />
     </div>
   );
 }
