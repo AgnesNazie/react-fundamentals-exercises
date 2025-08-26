@@ -3,7 +3,9 @@ import AppHeader from "./Components/AppHeader";
 import GreetingBanner from "./Components/GreetingBanner";
 import ProfileCard from "./Components/ProfileCard";
 import PrimaryButton from "./Components/PrimaryButton";
-import QuantitySelector from "./Components/QuantitySelector"; 
+import QuantitySelector from "./Components/QuantitySelector";
+import PasswordField from "./Components/PasswordField"; 
+ 
 function App() {
   return (
    <div className="p-6 space-y-6">
@@ -35,6 +37,10 @@ function App() {
        </div> 
        {/* Exercise 5 */}
       <QuantitySelector onChange={(qty) => console.log("Quantity changed:", qty)} />
+        
+      {/* Exercise 6 */}
+      <PasswordField />
+ 
     </div>
   );
 }
