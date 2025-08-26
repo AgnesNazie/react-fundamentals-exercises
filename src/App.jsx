@@ -5,6 +5,7 @@ import ProfileCard from "./Components/ProfileCard";
 import PrimaryButton from "./Components/PrimaryButton";
 import QuantitySelector from "./Components/QuantitySelector";
 import PasswordField from "./Components/PasswordField"; 
+import LikeButton from "./Components/LikeButton";
  
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
         
       {/* Exercise 6 */}
       <PasswordField />
+      {/* Exercise 7 */}
+      <LikeButton initialCount={10} />
  
     </div>
   );
