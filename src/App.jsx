@@ -7,6 +7,8 @@ import QuantitySelector from "./Components/QuantitySelector";
 import PasswordField from "./Components/PasswordField"; 
 import LikeButton from "./Components/LikeButton";
 import ContactSearch from "./Components/ContactSearch";
+import TodoList from "./Components/TodoList";
+import ProductDetails from "./Components/ProductDetails";
  
 function App() {
   return (
@@ -54,7 +56,13 @@ function App() {
           { id: 4, name: "Lizzy Neol" },
         ]}
       />
- 
+
+  {/* Exercise 9 */}
+      <TodoList />
+
+      
+      {/* Exercise 10 */}
+      <ProductDetails title="Wireless Headphones" price={99.99} />
     </div>
   );
 }
