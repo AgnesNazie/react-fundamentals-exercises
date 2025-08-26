@@ -2,6 +2,7 @@ import React from "react";
 import AppHeader from "./Components/AppHeader";
 import GreetingBanner from "./Components/GreetingBanner";
 import ProfileCard from "./Components/ProfileCard";
+import PrimaryButton from "./Components/PrimaryButton";
 
 function App() {
   return (
@@ -26,6 +27,12 @@ function App() {
         job="Backend Developer"
         email="Agnes.@Test.com"
       />
+      {/* Exercise 4 */}
+      <div className="space-x-3">
+        <PrimaryButton label="Click Me" onClick={() => alert("Button clicked!")} />
+        <PrimaryButton label="Disabled Button" disabled />
+        <PrimaryButton /> {/* Uses default label "Submit" */}
+       </div> 
     </div>
   );
 }
