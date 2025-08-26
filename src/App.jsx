@@ -3,7 +3,7 @@ import AppHeader from "./Components/AppHeader";
 import GreetingBanner from "./Components/GreetingBanner";
 import ProfileCard from "./Components/ProfileCard";
 import PrimaryButton from "./Components/PrimaryButton";
-
+import QuantitySelector from "./Components/QuantitySelector"; 
 function App() {
   return (
    <div className="p-6 space-y-6">
@@ -33,6 +33,8 @@ function App() {
         <PrimaryButton label="Disabled Button" disabled />
         <PrimaryButton /> {/* Uses default label "Submit" */}
        </div> 
+       {/* Exercise 5 */}
+      <QuantitySelector onChange={(qty) => console.log("Quantity changed:", qty)} />
     </div>
   );
 }
